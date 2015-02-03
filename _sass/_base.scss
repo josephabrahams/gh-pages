@@ -10,21 +10,17 @@ html {
 }
 
 
-/**
- * apply a natural box layout model to all elements,
- * but allowing components to change
- */
+// apply a natural box layout model to all elements,
+// but allowing components to change
 
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
 
-/**
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
+// Remove text-shadow in selection highlight: h5bp.com/i
+// These selection rule sets have to be separate.
+// Customize the background color to match your design.
 
 ::-moz-selection {
     background: $color-accent;
@@ -39,9 +35,7 @@ html {
 }
 
 
-/**
- * A better looking default horizontal rule
- */
+// A better looking default horizontal rule
 
 hr {
     display: block;
@@ -53,10 +47,8 @@ hr {
 }
 
 
-/**
- * Remove the gap between images, videos, audio and canvas and the bottom of
- * their containers: h5bp.com/i/440
- */
+// Remove the gap between images, videos, audio and canvas and the bottom of
+// their containers: h5bp.com/i/440
 
 audio,
 canvas,
@@ -67,9 +59,7 @@ video {
 }
 
 
-/**
- * Remove default fieldset styles.
- */
+// Remove default fieldset styles.
 
 fieldset {
     border: 0;
@@ -78,10 +68,9 @@ fieldset {
 }
 
 
-/**
- * Allow only vertical resizing of textareas.
- */
+// Allow only vertical resizing of textareas.
 
 textarea {
     resize: vertical;
 }
+

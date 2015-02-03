@@ -1,10 +1,8 @@
 /*------------------------------------*\
-    Helper classes
+    #HELPER-CLASSES
 \*------------------------------------*/
 
-/**
- * Hide visually and from screen readers: h5bp.com/u
- */
+// Hide visually and from screen readers: h5bp.com/u
 
 .hidden {
     display: none !important;
@@ -12,9 +10,7 @@
 }
 
 
-/**
- * Hide only visually, but have it available for screen readers: h5bp.com/v
- */
+// Hide only visually, but have it available for screen readers: h5bp.com/v
 
 .visuallyhidden {
     border: 0;
@@ -27,10 +23,8 @@
     width: 1px;
 }
 
-/**
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
+ // Extends the .visuallyhidden class to allow the element to be focusable
+ // when navigated to via the keyboard: h5bp.com/p
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
@@ -43,26 +37,22 @@
 }
 
 
-/**
- * Hide visually and from screen readers, but maintain layout
- */
+// Hide visually and from screen readers, but maintain layout
 
 .invisible {
     visibility: hidden;
 }
 
 
-/**
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
+// Clearfix: contain floats
+//
+// For modern browsers
+// 1. The space content is one way to avoid an Opera bug when the
+//    `contenteditable` attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of elements
+//    that receive the `clearfix` class.
+// 2. The use of `table` rather than `block` is only necessary if using
+//    `:before` to contain the top-margins of child elements.
 
 .clearfix:before,
 .clearfix:after {
@@ -73,3 +63,4 @@
 .clearfix:after {
     clear: both;
 }
+
