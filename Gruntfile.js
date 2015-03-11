@@ -76,7 +76,7 @@ module.exports = function(grunt) {
       jekyll: {
         files: [
           '**/*.html','**/*.md','**/*.yml','img/**/*','js/**/*','!README.md',
-          '!_sass/**','!_site/**','!bower_components/**','!css/**','!node_modules'
+          '!_sass/**','!_site/**','!bower_components/**','!css/**','!node_modules/**'
         ],
         tasks: ['shell:jekyll','shell:sass'],
         options: {
