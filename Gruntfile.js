@@ -25,6 +25,18 @@ module.exports = function(grunt) {
         }
       }
     },
+    copy: {
+      img: {
+          expand: true,
+          src: ['img/**/*'],
+          dest: '_site/'
+      },
+      js: {
+          expand: true,
+          src: ['js/**/*'],
+          dest: '_site/'
+      }
+    },
     modernizr: {
       dist: {
         devFile: 'js/lib/modernizr.min.js',
@@ -73,12 +85,26 @@ module.exports = function(grunt) {
       options: {
         livereload: true
       },
-      jekyll: {
+      html: {
         files: [
-          '**/*.html','**/*.md','**/*.yml','img/**/*','js/**/*','!README.md',
-          '!_sass/**','!_site/**','!bower_components/**','!css/**','!node_modules/**'
+          '**/*.html','**/*.md','**/*.yml',
+          '!README.md','!_site/**','!bower_components/**','!node_modules/**'
         ],
         tasks: ['shell:jekyll','shell:sass'],
+        options: {
+          debounceDelay: 250
+        }
+      },
+      img: {
+        files: ['img/**/*'],
+        tasks: ['copy:img'],
+        options: {
+          debounceDelay: 250
+        }
+      },
+      js: {
+        files: ['js/**/*'],
+        tasks: ['copy:js'],
         options: {
           debounceDelay: 250
         }
@@ -96,6 +122,7 @@ module.exports = function(grunt) {
   // Load tasks provided by npm modules
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-modernizr');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-shell');
