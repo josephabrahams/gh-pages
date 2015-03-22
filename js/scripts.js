@@ -1,13 +1,13 @@
 /* jshint browser: true, devel: true, jquery: true */
 
-;(function($,window,document,undefined) {
+;(function($, window, undefined) {
   'use strict';
 
-  var $document = $('document');
+  var $document = $('window.document');
 
   $document.ready(function() {
     console.log('Hello, world!');
   });
 
-})(jQuery,window,document);
+})(jQuery, window);
 
