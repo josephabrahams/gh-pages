@@ -66,7 +66,7 @@ module.exports = function(grunt) {
           cssclassprefix: ''
         },
         files : {
-          src: ['_sass/**','css/**','js/**',]
+          src: ['_sass/**','css/**','js/**']
         },
       }
     },
