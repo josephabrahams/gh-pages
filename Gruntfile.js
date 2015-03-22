@@ -26,6 +26,11 @@ module.exports = function(grunt) {
       }
     },
     copy: {
+      css: {
+          expand: true,
+          src: ['css/**/*.css'],
+          dest: '_site/'
+      },
       img: {
           expand: true,
           src: ['img/**/*'],
@@ -77,44 +82,39 @@ module.exports = function(grunt) {
       },
       sass: {
         command:
-          'perl -ne \'$i > 1 ? print : /^---/ && $i++\' css/styles.scss | ' +
-          'bundle exec sass --scss --sourcemap=none -s -t expanded -I _sass _site/css/styles.css'
+          /* jshint -W101 */
+          'for stylesheet in $(find css -name "*.scss" -print); do ' +
+          'perl -ne \'$i > 1 ? print : /^---/ && $i++\' $stylesheet | ' +  // strip YAML front matter
+          'bundle exec sass --scss --sourcemap=none -s -t expanded -I _sass _site/${stylesheet%.*}.css;' +
+          'done;'
       }
     },
     watch: {
       options: {
         livereload: true
       },
+      css: {
+        files: ['css/**/*.css'],
+        tasks: ['copy:css']
+      },
       html: {
         files: [
           '**/*.html','**/*.md','**/*.yml',
           '!README.md','!_site/**','!bower_components/**','!node_modules/**'
         ],
-        tasks: ['shell:jekyll','shell:sass'],
-        options: {
-          debounceDelay: 250
-        }
+        tasks: ['shell:jekyll','shell:sass']
       },
       img: {
         files: ['img/**/*'],
-        tasks: ['copy:img'],
-        options: {
-          debounceDelay: 250
-        }
+        tasks: ['copy:img']
       },
       js: {
         files: ['js/**/*'],
-        tasks: ['copy:js'],
-        options: {
-          debounceDelay: 250
-        }
+        tasks: ['copy:js']
       },
       sass: {
-        files: ['_sass/**','css/**'],
-        tasks: ['shell:sass'],
-        options: {
-          debounceDelay: 250
-        }
+        files: ['_sass/**/*','css/**/*.scss'],
+        tasks: ['shell:sass']
       }
     }
   });
@@ -123,8 +123,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-modernizr');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-modernizr');
   grunt.loadNpmTasks('grunt-shell');
 
   // Custom tasks
