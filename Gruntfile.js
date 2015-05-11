@@ -100,7 +100,7 @@ module.exports = function(grunt) {
       html: {
         files: [
           '**/*.html','**/*.md','**/*.yml',
-          '!README.md','!_site/**','!bower_components/**','!node_modules/**'
+          '!README.md','!_site/**','!bower_components/**','!node_modules/**','!vendor/**'
         ],
         tasks: ['shell:jekyll','shell:sass']
       },

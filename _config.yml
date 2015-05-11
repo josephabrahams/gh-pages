@@ -9,7 +9,8 @@ exclude: [
     LICENSE,
     node_modules,
     package.json,
-    README.md
+    README.md,
+    vendor
   ]
 
 safe: true

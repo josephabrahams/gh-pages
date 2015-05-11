@@ -1,6 +1,43 @@
-.bundle/
-.sass-cache/
-.ruby-version
+# Jekyll
 _site/
+
+# Bower
 bower_components/
+
+# Node
 node_modules/
+
+# Ruby
+.bundle/
+/vendor/
+
+# Sass
+.sass-cache/
+
+# Vim
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+# Linux
+*~
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+# Leave 2 spaces after Icon
+Icon
+
+

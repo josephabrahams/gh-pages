@@ -6,9 +6,6 @@
 
     $ npm install
 
-    $ bower install
-
-
 ## Local Development
 
 Build Jekyll into `_site`:
