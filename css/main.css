@@ -6,6 +6,7 @@
  */
 
 @import "variables";
+@import "normalize";
 @import "base";
 @import "main";
 @import "helpers";

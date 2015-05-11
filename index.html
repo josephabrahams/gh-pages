@@ -11,13 +11,7 @@
         <!-- <link rel="shortcut icon" href="{{ site.github.url }}/img/favicon.ico"> -->
         <!-- <link rel="apple-touch-icon" href="{{ site.github.url }}/img/apple-touch-icon.png"> -->
 
-        {% if site.github %}
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
-        {% else %}
-        <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
-        {% endif %}
-        <link rel="stylesheet" href="{{ site.github.url }}/css/styles.css">
-
+        <link rel="stylesheet" href="{{ site.github.url }}/css/main.css">
         <script src="{{ site.github.url }}/js/lib/modernizr.min.js"></script>
     </head>
     <body>
@@ -28,8 +22,6 @@
         {% else %}
         <script src="bower_components/jquery/dist/jquery.js"></script>
         {% endif %}
-        <script src="{{ site.github.url }}/js/scripts.js"></script>
+        <script src="{{ site.github.url }}/js/main.js"></script>
     </body>
 </html>
-
-<!-- vi: set ft=liquid : -->
