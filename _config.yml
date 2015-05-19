@@ -1,17 +1,17 @@
 # Jekyll config
 
 exclude: [
-    bower.json,
-    CNAME,
-    Gemfile,
-    Gemfile.lock,
-    Gruntfile.js,
-    LICENSE,
-    node_modules,
-    package.json,
-    README.md,
-    vendor
-  ]
+  bower.json,
+  CNAME,
+  Gemfile,
+  Gemfile.lock,
+  Gruntfile.js,
+  LICENSE,
+  node_modules,
+  package.json,
+  README.md,
+  vendor/bundle
+]
 
 safe: true
 

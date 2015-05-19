@@ -1,29 +1,14 @@
-# Jekyll
-_site/
-
 # Bower
 bower_components/
 
-# Node
-node_modules/
-
-# Ruby
-.bundle/
-/vendor/
-
-# Sass
-.sass-cache/
-
-# Vim
-[._]*.s[a-w][a-z]
-[._]s[a-w][a-z]
-*.un~
-Session.vim
-.netrwhist
-*~
+# Jekyll
+_site/
 
 # Linux
 *~
+
+# Node
+node_modules/
 
 # OSX
 .DS_Store
@@ -37,7 +22,21 @@ Session.vim
 Network Trash Folder
 Temporary Items
 .apdisk
-# Leave 2 spaces after Icon
+# Leave 2 lines after Icon
 Icon
 
 
+# Ruby
+.bundle/
+vendor/bundle/
+
+# Sass
+.sass-cache/
+
+# Vim
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
