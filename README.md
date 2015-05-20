@@ -22,8 +22,8 @@ rebuild Jekyll as needed:
 
     $ grunt serve
 
-Parse `_sass`, `css`, and `js` for [Modernizr](http://modernizr.com/) references
-and build to `js/lib/modernizr.min.js`:
+Parse `_sass`, `css`, and `js` for [Modernizr](http://modernizr.com/)
+references and build to `js/lib/modernizr.min.js`:
 
     $ grunt modernizr
 
