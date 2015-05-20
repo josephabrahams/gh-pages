@@ -3,7 +3,7 @@
 ;(function($, window, document, undefined) {
   'use strict';
 
-  var $document = $('document');
+  var $document = $(document);
 
   $document.ready(function() {
     console.log('Hello, world!');
