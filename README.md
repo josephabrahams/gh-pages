@@ -27,3 +27,7 @@ references and build to `js/lib/modernizr.min.js`:
 
     $ grunt modernizr
 
+## Deployment
+
+    $ git push origin gh-pages
+
