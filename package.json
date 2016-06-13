@@ -1,5 +1,4 @@
 {
-  "name": "example.com",
   "private": true,
   "devDependencies": {
     "grunt": "^0.4.5",

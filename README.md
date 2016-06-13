@@ -6,9 +6,6 @@
 
     $ npm install
 
-    $ bower install
-
-
 ## Local Development
 
 Build Jekyll into `_site`:
@@ -29,4 +26,8 @@ Parse `_sass`, `css`, and `js` for [Modernizr](http://modernizr.com/)
 references and build to `js/lib/modernizr.min.js`:
 
     $ grunt modernizr
+
+## Deployment
+
+    $ git push origin gh-pages
 

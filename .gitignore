@@ -1,7 +1,42 @@
-.bundle/
-.sass-cache/
-.ruby-version
-_site/
+# Bower
 bower_components/
+
+# Jekyll
+_site/
+
+# Linux
+*~
+
+# Node
 node_modules/
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+# Leave 2 lines after Icon
+Icon
+
+
+# Ruby
+.bundle/
 vendor/bundle/
+
+# Sass
+.sass-cache/
+
+# Vim
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
